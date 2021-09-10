@@ -32,7 +32,7 @@ function Calculator(props) {
         return;
       } else {
         if (value === '=') {
-          setButton(eval(button));
+          setButton(eval(button).toString());
           return;
         }
         if (!isNaN(button[button.length - 1])) {
